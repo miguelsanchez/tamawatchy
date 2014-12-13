@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+
+  ViewController *viewController = [[ViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+  [self.window setRootViewController:viewController];
+  [self.window makeKeyAndVisible];
+
+  NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.miguelsanchez.tamawatchy.documents"];
+  if(![shared valueForKey:@"stateDictionary"])
+  {
+    NSDictionary *stateDictionary = @{@"hungry":@{@"state":@(2),@"lastUpdate":[NSDate date],@"emoji":@"🍗"},
+                                      @"happiness":@{@"state":@(2),@"lastUpdate":[NSDate date],@"emoji":@"🎾"},
+                                      @"clean":@{@"state":@(2),@"lastUpdate":[NSDate date],@"emoji":@"🚿"},
+                                      @"sleep":@{@"state":@(2),@"lastUpdate":[NSDate date],@"emoji":@"😴"}};
+    [shared setObject:stateDictionary forKey:@"stateDictionary"];
+    [shared synchronize];
+  }
+
   return YES;
+}
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply
+{
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"stateUpdate" object:reply userInfo:userInfo];
+}
+
+
+
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler
+{
+  NSLog(@"HOLA");
+  completionHandler();
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

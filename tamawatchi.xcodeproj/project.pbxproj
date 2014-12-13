@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494137BE1A3C692A00B43F59 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494137BD1A3C692A00B43F59 /* MainViewController.xib */; };
 		498C13EE1A3C4D3200603F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C13ED1A3C4D3200603F9B /* main.m */; };
 		498C13F11A3C4D3200603F9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C13F01A3C4D3200603F9B /* AppDelegate.m */; };
 		498C13F41A3C4D3200603F9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C13F31A3C4D3200603F9B /* ViewController.m */; };
@@ -14,6 +15,16 @@
 		498C13F91A3C4D3200603F9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498C13F81A3C4D3200603F9B /* Images.xcassets */; };
 		498C13FC1A3C4D3200603F9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498C13FA1A3C4D3200603F9B /* LaunchScreen.xib */; };
 		498C14081A3C4D3200603F9B /* tamawatchiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C14071A3C4D3200603F9B /* tamawatchiTests.m */; };
+		498C141C1A3C4D7700603F9B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C141B1A3C4D7700603F9B /* InterfaceController.m */; };
+		498C141F1A3C4D7700603F9B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C141E1A3C4D7700603F9B /* NotificationController.m */; };
+		498C14221A3C4D7700603F9B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C14211A3C4D7700603F9B /* GlanceController.m */; };
+		498C14241A3C4D7700603F9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498C14231A3C4D7700603F9B /* Images.xcassets */; };
+		498C14281A3C4D7700603F9B /* tamawatchi WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 498C14271A3C4D7700603F9B /* tamawatchi WatchKit App.app */; };
+		498C142F1A3C4D7700603F9B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498C142E1A3C4D7700603F9B /* Interface.storyboard */; };
+		498C14311A3C4D7700603F9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498C14301A3C4D7700603F9B /* Images.xcassets */; };
+		498C14341A3C4D7700603F9B /* tamawatchi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 498C14151A3C4D7700603F9B /* tamawatchi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		498C143E1A3C5C7A00603F9B /* MainOptionsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C143D1A3C5C7A00603F9B /* MainOptionsInterfaceController.m */; };
+		498C14411A3C5D3200603F9B /* AnimatedActionInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C14401A3C5D3200603F9B /* AnimatedActionInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +35,40 @@
 			remoteGlobalIDString = 498C13E71A3C4D3200603F9B;
 			remoteInfo = tamawatchi;
 		};
+		498C14291A3C4D7700603F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498C13E01A3C4D3200603F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498C14261A3C4D7700603F9B;
+			remoteInfo = "tamawatchi WatchKit App";
+		};
+		498C14321A3C4D7700603F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498C13E01A3C4D3200603F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498C14141A3C4D7700603F9B;
+			remoteInfo = "tamawatchi WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		498C143B1A3C4D7700603F9B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				498C14341A3C4D7700603F9B /* tamawatchi WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		494137BB1A3C668300B43F59 /* tamawatchi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = tamawatchi.entitlements; sourceTree = "<group>"; };
+		494137BC1A3C66E500B43F59 /* tamawatchi WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "tamawatchi WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		494137BD1A3C692A00B43F59 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		498C13E81A3C4D3200603F9B /* tamawatchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamawatchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		498C13EC1A3C4D3200603F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498C13ED1A3C4D3200603F9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +82,24 @@
 		498C14011A3C4D3200603F9B /* tamawatchiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamawatchiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		498C14061A3C4D3200603F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498C14071A3C4D3200603F9B /* tamawatchiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tamawatchiTests.m; sourceTree = "<group>"; };
+		498C14151A3C4D7700603F9B /* tamawatchi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tamawatchi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498C14181A3C4D7700603F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498C14191A3C4D7700603F9B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		498C141A1A3C4D7700603F9B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		498C141B1A3C4D7700603F9B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		498C141D1A3C4D7700603F9B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		498C141E1A3C4D7700603F9B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		498C14201A3C4D7700603F9B /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		498C14211A3C4D7700603F9B /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		498C14231A3C4D7700603F9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		498C14271A3C4D7700603F9B /* tamawatchi WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tamawatchi WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498C142D1A3C4D7700603F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498C142E1A3C4D7700603F9B /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		498C14301A3C4D7700603F9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		498C143C1A3C5C7A00603F9B /* MainOptionsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainOptionsInterfaceController.h; sourceTree = "<group>"; };
+		498C143D1A3C5C7A00603F9B /* MainOptionsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainOptionsInterfaceController.m; sourceTree = "<group>"; };
+		498C143F1A3C5D3200603F9B /* AnimatedActionInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedActionInterfaceController.h; sourceTree = "<group>"; };
+		498C14401A3C5D3200603F9B /* AnimatedActionInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedActionInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		498C14121A3C4D7700603F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +132,8 @@
 			children = (
 				498C13EA1A3C4D3200603F9B /* tamawatchi */,
 				498C14041A3C4D3200603F9B /* tamawatchiTests */,
+				498C14161A3C4D7700603F9B /* tamawatchi WatchKit Extension */,
+				498C142B1A3C4D7700603F9B /* tamawatchi WatchKit App */,
 				498C13E91A3C4D3200603F9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +143,8 @@
 			children = (
 				498C13E81A3C4D3200603F9B /* tamawatchi.app */,
 				498C14011A3C4D3200603F9B /* tamawatchiTests.xctest */,
+				498C14151A3C4D7700603F9B /* tamawatchi WatchKit Extension.appex */,
+				498C14271A3C4D7700603F9B /* tamawatchi WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,10 +152,12 @@
 		498C13EA1A3C4D3200603F9B /* tamawatchi */ = {
 			isa = PBXGroup;
 			children = (
+				494137BB1A3C668300B43F59 /* tamawatchi.entitlements */,
 				498C13EF1A3C4D3200603F9B /* AppDelegate.h */,
 				498C13F01A3C4D3200603F9B /* AppDelegate.m */,
 				498C13F21A3C4D3200603F9B /* ViewController.h */,
 				498C13F31A3C4D3200603F9B /* ViewController.m */,
+				494137BD1A3C692A00B43F59 /* MainViewController.xib */,
 				498C13F51A3C4D3200603F9B /* Main.storyboard */,
 				498C13F81A3C4D3200603F9B /* Images.xcassets */,
 				498C13FA1A3C4D3200603F9B /* LaunchScreen.xib */,
@@ -119,6 +192,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		498C14161A3C4D7700603F9B /* tamawatchi WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				494137BC1A3C66E500B43F59 /* tamawatchi WatchKit Extension.entitlements */,
+				498C141A1A3C4D7700603F9B /* InterfaceController.h */,
+				498C141B1A3C4D7700603F9B /* InterfaceController.m */,
+				498C143C1A3C5C7A00603F9B /* MainOptionsInterfaceController.h */,
+				498C143D1A3C5C7A00603F9B /* MainOptionsInterfaceController.m */,
+				498C143F1A3C5D3200603F9B /* AnimatedActionInterfaceController.h */,
+				498C14401A3C5D3200603F9B /* AnimatedActionInterfaceController.m */,
+				498C141D1A3C4D7700603F9B /* NotificationController.h */,
+				498C141E1A3C4D7700603F9B /* NotificationController.m */,
+				498C14201A3C4D7700603F9B /* GlanceController.h */,
+				498C14211A3C4D7700603F9B /* GlanceController.m */,
+				498C14231A3C4D7700603F9B /* Images.xcassets */,
+				498C14171A3C4D7700603F9B /* Supporting Files */,
+			);
+			path = "tamawatchi WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		498C14171A3C4D7700603F9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498C14181A3C4D7700603F9B /* Info.plist */,
+				498C14191A3C4D7700603F9B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		498C142B1A3C4D7700603F9B /* tamawatchi WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				498C142E1A3C4D7700603F9B /* Interface.storyboard */,
+				498C14301A3C4D7700603F9B /* Images.xcassets */,
+				498C142C1A3C4D7700603F9B /* Supporting Files */,
+			);
+			path = "tamawatchi WatchKit App";
+			sourceTree = "<group>";
+		};
+		498C142C1A3C4D7700603F9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498C142D1A3C4D7700603F9B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +249,12 @@
 				498C13E41A3C4D3200603F9B /* Sources */,
 				498C13E51A3C4D3200603F9B /* Frameworks */,
 				498C13E61A3C4D3200603F9B /* Resources */,
+				498C143B1A3C4D7700603F9B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				498C14331A3C4D7700603F9B /* PBXTargetDependency */,
 			);
 			name = tamawatchi;
 			productName = tamawatchi;
@@ -157,6 +279,39 @@
 			productReference = 498C14011A3C4D3200603F9B /* tamawatchiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		498C14141A3C4D7700603F9B /* tamawatchi WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498C14381A3C4D7700603F9B /* Build configuration list for PBXNativeTarget "tamawatchi WatchKit Extension" */;
+			buildPhases = (
+				498C14111A3C4D7700603F9B /* Sources */,
+				498C14121A3C4D7700603F9B /* Frameworks */,
+				498C14131A3C4D7700603F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				498C142A1A3C4D7700603F9B /* PBXTargetDependency */,
+			);
+			name = "tamawatchi WatchKit Extension";
+			productName = "tamawatchi WatchKit Extension";
+			productReference = 498C14151A3C4D7700603F9B /* tamawatchi WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		498C14261A3C4D7700603F9B /* tamawatchi WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498C14351A3C4D7700603F9B /* Build configuration list for PBXNativeTarget "tamawatchi WatchKit App" */;
+			buildPhases = (
+				498C14251A3C4D7700603F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tamawatchi WatchKit App";
+			productName = "tamawatchi WatchKit App";
+			productReference = 498C14271A3C4D7700603F9B /* tamawatchi WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +323,28 @@
 				TargetAttributes = {
 					498C13E71A3C4D3200603F9B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 32RX78HQJ6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					498C14001A3C4D3200603F9B = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 498C13E71A3C4D3200603F9B;
+					};
+					498C14141A3C4D7700603F9B = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 32RX78HQJ6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					498C14261A3C4D7700603F9B = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -190,6 +363,8 @@
 			targets = (
 				498C13E71A3C4D3200603F9B /* tamawatchi */,
 				498C14001A3C4D3200603F9B /* tamawatchiTests */,
+				498C14141A3C4D7700603F9B /* tamawatchi WatchKit Extension */,
+				498C14261A3C4D7700603F9B /* tamawatchi WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +377,7 @@
 				498C13F71A3C4D3200603F9B /* Main.storyboard in Resources */,
 				498C13FC1A3C4D3200603F9B /* LaunchScreen.xib in Resources */,
 				498C13F91A3C4D3200603F9B /* Images.xcassets in Resources */,
+				494137BE1A3C692A00B43F59 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +385,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498C14131A3C4D7700603F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498C14241A3C4D7700603F9B /* Images.xcassets in Resources */,
+				498C14281A3C4D7700603F9B /* tamawatchi WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498C14251A3C4D7700603F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498C142F1A3C4D7700603F9B /* Interface.storyboard in Resources */,
+				498C14311A3C4D7700603F9B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +427,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		498C14111A3C4D7700603F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498C141F1A3C4D7700603F9B /* NotificationController.m in Sources */,
+				498C141C1A3C4D7700603F9B /* InterfaceController.m in Sources */,
+				498C14411A3C5D3200603F9B /* AnimatedActionInterfaceController.m in Sources */,
+				498C143E1A3C5C7A00603F9B /* MainOptionsInterfaceController.m in Sources */,
+				498C14221A3C4D7700603F9B /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +446,16 @@
 			isa = PBXTargetDependency;
 			target = 498C13E71A3C4D3200603F9B /* tamawatchi */;
 			targetProxy = 498C14021A3C4D3200603F9B /* PBXContainerItemProxy */;
+		};
+		498C142A1A3C4D7700603F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 498C14261A3C4D7700603F9B /* tamawatchi WatchKit App */;
+			targetProxy = 498C14291A3C4D7700603F9B /* PBXContainerItemProxy */;
+		};
+		498C14331A3C4D7700603F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 498C14141A3C4D7700603F9B /* tamawatchi WatchKit Extension */;
+			targetProxy = 498C14321A3C4D7700603F9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,9 +561,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tamawatchi/tamawatchi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tamawatchi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,9 +575,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tamawatchi/tamawatchi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tamawatchi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -395,6 +619,70 @@
 			};
 			name = Release;
 		};
+		498C14361A3C4D7700603F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = tamawatchi_WatchKit_Extension;
+				INFOPLIST_FILE = "tamawatchi WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		498C14371A3C4D7700603F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = tamawatchi_WatchKit_Extension;
+				INFOPLIST_FILE = "tamawatchi WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		498C14391A3C4D7700603F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "tamawatchi WatchKit Extension/tamawatchi WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tamawatchi WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		498C143A1A3C4D7700603F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "tamawatchi WatchKit Extension/tamawatchi WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "tamawatchi WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +702,7 @@
 				498C140D1A3C4D3200603F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		498C140E1A3C4D3200603F9B /* Build configuration list for PBXNativeTarget "tamawatchiTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +711,25 @@
 				498C14101A3C4D3200603F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498C14351A3C4D7700603F9B /* Build configuration list for PBXNativeTarget "tamawatchi WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498C14361A3C4D7700603F9B /* Debug */,
+				498C14371A3C4D7700603F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498C14381A3C4D7700603F9B /* Build configuration list for PBXNativeTarget "tamawatchi WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498C14391A3C4D7700603F9B /* Debug */,
+				498C143A1A3C4D7700603F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

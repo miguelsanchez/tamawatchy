@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *hungryValue;
+@property (nonatomic, strong) IBOutlet UILabel *happyValue;
+@property (nonatomic, strong) IBOutlet UILabel *cleanValue;
+@property (nonatomic, strong) IBOutlet UILabel *sleepValue;
 
 @end
 
